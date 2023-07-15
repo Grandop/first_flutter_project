@@ -13,7 +13,9 @@ class _DrawerLayoutState extends State<DrawerLayout> {
     return Column(
       children: [
         UserAccountsDrawerHeader(
-          currentAccountPicture: Image.asset('lib/assets/images/eu.jpeg'),
+          currentAccountPicture: ClipOval(
+            child: Image.asset('lib/assets/images/eu.jpeg')
+          ),
           accountName: const Text('Pedro Grando'), 
           accountEmail: const Text('grandop03@gmail.com'),
         ),
